@@ -3,7 +3,7 @@
 {
   services.desktopManager = {
     plasma6.enable = true;
-    autologin = {
+    autoLogin = {
       enable = true;
       user = ["callum"];
     };
