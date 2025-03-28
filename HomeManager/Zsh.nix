@@ -8,7 +8,7 @@
       syntaxHighlighting.enable = true;
       initExtraFirst = "fastfetch";
       shellAliases = {
-        update = "nixos-rebuild switch -L --refresh --flake github:Boxingflame/nixos";
+        update = "sudo nixos-rebuild switch -L --refresh --flake github:Boxingflame/nixos";
       };
       oh-my-zsh = {
         enable = true;
