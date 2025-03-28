@@ -15,6 +15,7 @@
     ./Packages.nix
     ./Programs.nix
     ./Users.nix
+    ./WallpaperEngineKDEPlugin.nix
     ./Zsh.nix
   ];
 }
