@@ -89,7 +89,7 @@ in
     };
   };
 
-  config = lib.mkIf (config.nixos.pkgs.wallpaper-engine-kde-plugin.enable && config.nixos.desktop.desktopEnvironment.plasma6.enable) {
+  config = lib.mkIf (config.nixos.pkgs.wallpaper-engine-kde-plugin.enable && config.services.desktopManager.plasma6.enable) {
     environment.systemPackages = with pkgs; [
       wallpaper-engine-kde-plugin
       kdePackages.qtwebsockets
@@ -97,12 +97,13 @@ in
       (python3.withPackages (python-pkgs: [ python-pkgs.websockets ]))
     ];
 
+    # Make Generic Again maybe lol
     system.activationScripts = {
       wallpaper-engine-kde-plugin.text = ''
         wallpaperenginetarget=/share/plasma/wallpapers/com.github.catsout.wallpaperEngineKde
-        mkdir -p /home/${config.nixos.system.user.defaultuser.name}/.local/share/plasma/wallpapers
-        chown -R ${config.nixos.system.user.defaultuser.name}:users /home/${config.nixos.system.user.defaultuser.name}/.local/share/plasma
-        ln -sf ${wallpaper-engine-kde-plugin}/$wallpaperenginetarget /home/${config.nixos.system.user.defaultuser.name}/.local/$wallpaperenginetarget
+        mkdir -p /home/callum/.local/share/plasma/wallpapers
+        chown -R callum:users /home/callum/.local/share/plasma
+        ln -sf ${wallpaper-engine-kde-plugin}/$wallpaperenginetarget /home/callum/.local/$wallpaperenginetarget
       '';
     };
   };
