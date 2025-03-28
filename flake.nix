@@ -26,7 +26,7 @@
             extraSpecialArgs = {inherit inputs;};
             backupFileExtension = "HomeManagerBackup";
             users = {
-              lucaruby = import ./Users/callum.nix;
+              callum = import ./HomeManager/Users/callum.nix;
             };
           };
         }
