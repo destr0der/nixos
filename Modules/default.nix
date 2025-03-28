@@ -14,6 +14,7 @@
     ./NixSettings.nix
     ./Packages.nix
     ./Programs.nix
+    ./Users.nix
     ./Zsh.nix
   ];
 }
