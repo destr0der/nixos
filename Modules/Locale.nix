@@ -21,5 +21,5 @@
 
   # Configure keymaps
   console.keyMap = "uk";
-  service.xserver.xkb.layout = "gb";
+  services.xserver.xkb.layout = "gb";
 }
