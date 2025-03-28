@@ -103,7 +103,6 @@ in
         wallpaperenginetarget=/share/plasma/wallpapers/com.github.catsout.wallpaperEngineKde
         mkdir -p /home/callum/.local/share/plasma/wallpapers
         chown -R callum:users /home/callum/.local/share/plasma
-        chmod -R 0744 /home/callum/.local/share/plasma
         ln -sf ${wallpaper-engine-kde-plugin}/$wallpaperenginetarget /home/callum/.local$wallpaperenginetarget
       '';
     };
