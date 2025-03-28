@@ -2,7 +2,7 @@
 
 {
   networking = {
-    networkmanger.enable = true;
+    networkmanager.enable = true;
     firewall = {
       enable = false;
       allowedTCPPorts = [6969];
