@@ -14,5 +14,8 @@
     vesktop
     prism-overlayed
     lutris-overlayed
+
+    #sort later
+    kdePackages.qtmultimedia
   ];
 }
