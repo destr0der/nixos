@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   imports = [
@@ -18,4 +18,6 @@
     ./WallpaperEngineKDEPlugin.nix
     ./Zsh.nix
   ];
+
+  config.nixos.pkgs.wallpaper-engine-kde-plugin.enable = true;
 }
