@@ -10,6 +10,6 @@
 
   home.file.mangohud = {
     target = "${config.home.homeDirectory}/.config/MangoHud/MangoHud.conf";
-    source = ..//Configurations/MangoHud.conf;
+    source = ../Configurations/MangoHud.conf;
   };
 }
