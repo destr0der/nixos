@@ -15,7 +15,7 @@
     #media-session.enable = true;
     extraConfig.pipewire."99-clock-rate" = {
       "context.properties" = {
-        "default.clock.rate" = 48000;
+        "default.clock.rate" = 44100;
         "default.clock.allowed-rates" = [ 44100 48000 96000 192000 384000 ];
       };
     };
