@@ -22,7 +22,7 @@
       availableKernelModules = [ 
         "nvme"
         "xhci_pci"
-        "achi"
+        "ahci"
         "usbhid"
         "usb_storage"
         "sd_mod"
