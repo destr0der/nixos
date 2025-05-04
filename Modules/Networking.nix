@@ -4,8 +4,11 @@
   networking = {
     networkmanager.enable = true;
     firewall = {
-      enable = false;
-      allowedTCPPorts = [6969];
+      enable = true;
+      allowedTCPPorts = [
+        6969
+        25565
+      ];
       allowedUDPPorts = [25565];
     };
   };
