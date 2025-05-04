@@ -23,7 +23,25 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            extraSpecialArgs = {inherit inputs;};
+            extraSpecialArgs = { inherit inputs; };
+            backupFileExtension = "HomeManagerBackup";
+            users = {
+              callum = import ./HomeManager/Users/callum.nix;
+            };
+          };
+        }
+      ];
+    };
+    nixosConfigurations.Levi-Omen = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [ 
+        ./Hosts/Levi-Omen.nix
+
+        home-manager.nixosModules.home-manager {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = { inherit inputs; };
             backupFileExtension = "HomeManagerBackup";
             users = {
               callum = import ./HomeManager/Users/callum.nix;
