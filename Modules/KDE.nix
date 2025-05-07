@@ -15,4 +15,7 @@
       user = "callum";
     };
   };
+
+  security.pam.services.login.enableKwallet = true;
 }
+
