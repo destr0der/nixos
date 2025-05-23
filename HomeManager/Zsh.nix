@@ -9,6 +9,7 @@
       initExtraFirst = "fastfetch";
       shellAliases = {
         update = "sudo nixos-rebuild switch -L --refresh --flake github:Boxingflame/nixos";
+        updateb = "sudo nixos-rebuild boot -L --refresh --flake github:Boxingflame/nixos";
       };
       oh-my-zsh = {
         enable = true;
