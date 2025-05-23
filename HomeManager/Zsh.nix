@@ -6,7 +6,7 @@
       enable = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
-      initExtraFirst = "fastfetch";
+      initContent = "fastfetch";
       shellAliases = {
         update = "sudo nixos-rebuild switch -L --refresh --flake github:Boxingflame/nixos";
         updateb = "sudo nixos-rebuild boot -L --refresh --flake github:Boxingflame/nixos";
