@@ -16,7 +16,8 @@
     lutris-overlayed
     packwiz
     zulu
-
+    vscode
+    
     #sort later
     kdePackages.qtmultimedia
   ];
