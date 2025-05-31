@@ -2,7 +2,10 @@
 
 {
   networking = {
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      enableStrongSwan = true;
+    };
     firewall = {
       enable = true;
       allowedTCPPorts = [
