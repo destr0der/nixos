@@ -14,10 +14,10 @@
     system = "x86_64-linux";
   in
   {
-    nixosConfigurations.Levi-NixOS = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.Unkown_Portable = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [ 
-        ./Hosts/Levi-NixOS.nix
+        ./Hosts/Unkown_Portable.nix
 
         home-manager.nixosModules.home-manager {
           home-manager = {
@@ -26,25 +26,7 @@
             extraSpecialArgs = { inherit inputs; };
             backupFileExtension = "HomeManagerBackup";
             users = {
-              callum = import ./HomeManager/Users/callum.nix;
-            };
-          };
-        }
-      ];
-    };
-    nixosConfigurations.Levi-Omen = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [ 
-        ./Hosts/Levi-Omen.nix
-
-        home-manager.nixosModules.home-manager {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            extraSpecialArgs = { inherit inputs; };
-            backupFileExtension = "HomeManagerBackup";
-            users = {
-              callum = import ./HomeManager/Users/callum.nix;
+              Des = import ./HomeManager/Users/Des.nix;
             };
           };
         }

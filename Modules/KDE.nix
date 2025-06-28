@@ -12,7 +12,7 @@
     };
     autoLogin = {
       enable = true;
-      user = "callum";
+      user = "Des";
     };
   };
 

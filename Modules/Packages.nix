@@ -18,7 +18,7 @@
     zulu
     vscode
     
-    #sort later
+    #sort later - Random luca junk
     kdePackages.qtmultimedia
   ];
 }

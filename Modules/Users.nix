@@ -2,7 +2,7 @@
 
 {
   users.users = {
-    callum = {
+    Des = {
       isNormalUser = true;
       extraGroups = [ "networkmanager" "wheel" ];
     };
