@@ -8,7 +8,7 @@
       enable = true;
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
-      initContent = "fastfetch";
+      shellInit = "fastfetch";
       shellAliases = {
         update = "sudo nixos-rebuild switch -L --refresh --flake github:destr0der/nixos";
         updateb = "sudo nixos-rebuild boot -L --refresh --flake github:destr0der/nixos";
