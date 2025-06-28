@@ -23,6 +23,8 @@
     };
   };
 
+  swapDevices = [ { label = "NIXOS-SWAP"; } ];
+  
   # Devices Specific
   hardware.bluetooth.enable = true;
   
