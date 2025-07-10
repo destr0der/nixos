@@ -6,7 +6,7 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF8";
-  i18n.extraLocales = [ "en_GB.UTF-8/UTF-8" "nl_BE.UTF-8/UTF-8" ];
+  i18n.extraLocales = [ "nl_BE.UTF-8/UTF-8"];
   
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "nl_BE.UTF-8";
