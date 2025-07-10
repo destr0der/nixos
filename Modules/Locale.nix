@@ -10,6 +10,7 @@
   
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "nl_BE.UTF-8";
+    LC_CTYPE = "nl_BE.UTF-8";
     LC_COLLATE = "en_GB.UTF8";
     LC_IDENTIFICATION = "nl_BE.UTF-8";
     LC_MEASUREMENT = "nl_BE.UTF-8";

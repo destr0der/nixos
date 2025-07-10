@@ -8,7 +8,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "Unknown_Portable";
+  networking.hostName = "Unknown-Portable";
 
   # File System
   fileSystems = {

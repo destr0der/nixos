@@ -14,10 +14,10 @@
     system = "x86_64-linux";
   in
   {
-    nixosConfigurations.Unknown_Portable = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.Unknown-Portable = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [ 
-        ./Hosts/Unknown_Portable.nix
+        ./Hosts/Unknown-Portable.nix
 
         home-manager.nixosModules.home-manager {
           home-manager = {
